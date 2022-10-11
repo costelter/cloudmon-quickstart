@@ -19,7 +19,7 @@ When you want to access the cloudmon services (Grafana + Graphite UI) you will h
 
 ## Reverse proxy for TLS termination
 
-The installation method described in this document does not deploy an SSL certificate for these services. Just install a nginx or caddy as reverse proxy.
+The installation method described in this document does not deploy a SSL certificate for these services. Just install a nginx or caddy as reverse proxy.
 
 ## Prepare the deploy host with tox + ansible
 
@@ -312,7 +312,7 @@ In the next step will install the apimon plugin.
 
 After a few minutes you should see the first graphs in your Grafana Dashboard. Login with admin and the password you just in your config.yaml.
 
-You should find a dashboard Identity Service Statistics in a Folder CloudMon when you browse your available dashboards. When everything is fine you should see your first graph with the title _API calls duration_. The second graph titled _Highest API calls duration_ should be showing a "No data". The second graph will show only data when the call duration exeeds 1000 ms.
+You should find a dashboard Identity Service Statistics in a Folder CloudMon when you browse your available dashboards. When everything is fine you should see your first graph with the title _API calls duration_. The second graph titled _Highest API calls duration_ should be showing a "No data". The second graph will show only data when the call duration exceeds 1000 ms.
 
 The lower section _Scenario results_ will list a timestamp, the name of the playbook (scenario1_token.yaml), a job id, the result code and the URL to the log written to your swift bucket. The log contains the output of the playbook execution.
 
